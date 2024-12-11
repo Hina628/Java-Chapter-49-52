@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details Table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Student Details</h1>
+
+    <!-- Form for adding/editing student details -->
+    <form id="student-form">
+      <input type="hidden" id="editing-index" value="-1">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter name" required>
+      <label for="age">Age:</label>
+      <input type="number" id="age" placeholder="Enter age" required>
+      <label for="grade">Grade:</label>
+      <input type="text" id="grade" placeholder="Enter grade" required>
+      <button type="submit" id="submit-button">Add Student</button>
+    </form>
+
+    <!-- Table to display student details -->
+    <table id="student-table" border="1">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Grade</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
